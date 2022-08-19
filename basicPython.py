@@ -913,11 +913,24 @@
 # lst = ['임', '창', '민']
 # for lst_inx, lst_val in enumerate(lst):
 #     print(lst_inx, lst_val)
-
 a = int(input())
-for i in range(a):
-    b,c = input().split()
-    b = int(b)
-    for j in c:
-        print(j*b,end="")
-    print()
+b = sorted(list(map(int, input().split())))
+c = b[len(b)-1]
+d = []
+for i in b:
+   d.append(i/c * 100)
+print(d[1])
+     
+
+
+
+# a = input().upper()
+# a_lst = list(set(a))
+# b = []
+# for i in range(len(a_lst)):
+#     b.append(list(a).count(a_lst[i]))
+# if b.count(max(b)) != 1:
+#     print('?')
+# else:
+#     print(a_lst[b.index(max(b))])
+
